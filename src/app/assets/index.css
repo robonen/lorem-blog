@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Color Palette */
+  --black: oklch(0 0 0);
+  --white: oklch(1 0 0);
+
+  --gray-100: oklch(98% 0 0);
+  --gray-200: oklch(96% 0.0013 286.37);
+  --gray-300: oklch(92% 0.0097 273.35);
+  --gray-400: oklch(89% 0.0177 286.03);
+  --gray-500: oklch(72% 0.0264 275.76);
+  --gray-600: oklch(61% 0.0351 277.53);
+  --gray-700: oklch(50% 0.0353 276.96);
+  --gray-800: oklch(38% 0.0309 277.44);
+  --gray-900: oklch(23% 0.0428 274.8);
+
+  --primary: oklch(67% 0.1756 254.6);
+  --primary-dark: oklch(61% 0.1815 255.36);
+  --primary-light: oklch(96% 0.0148 251.16);
+
+  /* Default theme */
+  --background: var(--gray-200);
+  --foreground: var(--black);
+}
+
+.dark {
+  --background: var(--black);
+  --foreground: var(--white);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
