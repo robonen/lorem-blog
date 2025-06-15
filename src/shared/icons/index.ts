@@ -1,1 +1,9 @@
+export { default as ArrowIcon } from './ArrowIcon.vue';
+export { default as ChatIcon } from './ChatIcon.vue';
+export { default as CheckIcon } from './CheckIcon.vue';
+export { default as ClockIcon } from './ClockIcon.vue';
 export { default as Logo } from './Logo.vue';
+export { default as MagnifyingGlassIcon } from './MagnifyingGlassIcon.vue';
+export { default as PlusIcon } from './PlusIcon.vue';
+export { default as SearchListIcon } from './SearchListIcon.vue';
+export { default as XIcon } from './XIcon.vue';
