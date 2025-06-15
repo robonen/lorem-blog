@@ -11,8 +11,8 @@ const items = [
 <template>
   <header class="p-4 dark bg-background text-foreground">
     <div class="mx-auto container flex space-x-18">
-      <Logo class="h-6" aria-label="Logo" />
-      <NavigationMenu :items />
+      <Logo class="h-6" aria-label="Логотип" />
+      <NavigationMenu :items class="hidden lg:block" />
     </div>
   </header>
 </template>

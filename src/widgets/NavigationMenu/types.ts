@@ -4,3 +4,7 @@ export interface NavigationMenuItem {
   name: string;
   path: RouteLocationRaw;
 }
+
+export interface NavigationMenuProps {
+  items: NavigationMenuItem[];
+}
