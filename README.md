@@ -1,39 +1,26 @@
-# .
+<div>
+    <img src="https://bage.robonen.ru/github?profile=robonen&project=lorem-blog&description=Lorem%20Blog">
+</div>
 
-This template should help get you started developing with Vue 3 in Vite.
+# Introduction
 
-## Recommended IDE Setup
+Lorem blog is a simple blog template built with Vue.js and Tailwind CSS. It is designed to be easy to use and customize, making it a great starting point for your own blog.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Installation
 
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
+git clone https://github.com/robonen/lorem-blog.git
+cd lorem-blog
 pnpm install
 ```
 
-### Compile and Hot-Reload for Development
+## Usage
 
-```sh
-pnpm dev
+```bash
+pnpm run dev
 ```
+## Build
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-pnpm build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-pnpm test:unit
+```bash
+pnpm run build
 ```
