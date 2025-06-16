@@ -9,7 +9,7 @@ Lorem blog is a simple blog template built with Vue.js and Tailwind CSS. It is d
 ## Installation
 
 ```bash
-git clone https://github.com/robonen/lorem-blog.git
+git clone git@github.com:robonen/lorem-blog.git
 cd lorem-blog
 pnpm install
 ```
