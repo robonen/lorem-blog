@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { BlogHeader, useProvidingPosts } from '@/widgets/Blog';
-import { BlogList} from '@/widgets/Blog';
+import { BlogList } from '@/widgets/Blog';
 
 useProvidingPosts(() => fetch('/posts.json').then((response) => {
   if (!response.ok) {
