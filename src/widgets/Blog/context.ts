@@ -4,9 +4,9 @@ import { useInjectionStore } from '@robonen/vue';
 import { computed, reactive, ref, shallowRef } from 'vue';
 import { kmpSearch } from '@/shared/utils';
 
-interface PostItem extends Post {
+type PostItem = Post & {
   comments: PostComment[];
-}
+};
 
 export const {
   useProvidingState: useProvidingPosts,
@@ -23,7 +23,7 @@ export const {
   });
 
   const filtersActive = computed(() => {
-    return filters.search || filters.tags.size > 0;
+    return filters.search.trim() !== '' || filters.tags.size > 0;
   });
 
   const filteredPosts = computed(() => {

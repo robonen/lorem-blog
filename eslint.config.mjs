@@ -11,6 +11,9 @@ export default antfu({
   },
   rules: {
     'unused-imports/no-unused-imports': 'error',
+    'regexp/no-obscure-range': ['error', {
+      allowed: 'all',
+    }],
   },
   vue: true,
   typescript: true,
