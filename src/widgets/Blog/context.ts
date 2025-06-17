@@ -8,6 +8,10 @@ type PostItem = Post & {
   comments: PostComment[];
 };
 
+/**
+ * Blog uses injection store pattern
+ * @see https://deepwiki.com/robonen/lorem-blog/5.1-blog-content-system
+ */
 export const {
   useProvidingState: useProvidingPosts,
   useInjectedState: useInjectedPosts,
