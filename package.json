@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "test:unit": "vitest",
     "type:check": "vue-tsc --build",
-    "lint:check": "eslint ."
+    "lint:check": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@robonen/stdlib": "^0.0.7",
