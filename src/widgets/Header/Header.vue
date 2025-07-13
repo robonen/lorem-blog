@@ -1,6 +1,7 @@
 <script setup lang="ts">
+import type { NavigationMenuItem } from '../NavigationMenu';
 import { Logo } from '@/shared/icons';
-import { NavigationMenu, type NavigationMenuItem } from '../NavigationMenu';
+import { NavigationMenu } from '../NavigationMenu';
 
 const items = [
   { name: 'Главная', path: '/' },

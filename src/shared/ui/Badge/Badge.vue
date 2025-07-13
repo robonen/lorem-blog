@@ -1,5 +1,6 @@
 <script lang="ts">
-import { type BadgeVariant, badgeVariants } from './types';
+import type { BadgeVariant } from './types';
+import { badgeVariants } from './types';
 
 export interface BadgeProps {
   variant?: BadgeVariant;

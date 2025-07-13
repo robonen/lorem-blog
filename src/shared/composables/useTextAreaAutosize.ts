@@ -1,5 +1,6 @@
+import type { TemplateRef } from 'vue';
 import { clamp } from '@robonen/stdlib';
-import { nextTick, onMounted, onUnmounted, ref, type TemplateRef, watch } from 'vue';
+import { nextTick, onMounted, onUnmounted, ref, watch } from 'vue';
 
 export function useTextAreaAutosize(textareaRef: TemplateRef<HTMLTextAreaElement | null>) {
   const minHeight = ref(0);
