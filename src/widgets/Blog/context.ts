@@ -1,7 +1,7 @@
 import type { PostComment } from '@/entities/Comment';
 import type { Post } from '@/entities/Post';
-import { useInjectionStore } from '@robonen/vue';
-import { computed, reactive, ref, shallowRef } from 'vue';
+import { useAsyncState, useInjectionStore } from '@robonen/vue';
+import { computed, reactive, shallowRef } from 'vue';
 import { kmpSearch } from '@/shared/utils';
 
 type PostItem = Post & {
@@ -16,8 +16,22 @@ export const {
   useProvidingState: useProvidingPosts,
   useInjectedState: useInjectedPosts,
 } = useInjectionStore((loader: () => Promise<any>) => {
-  const posts = shallowRef<PostItem[]>([]);
-  const loading = ref(false);
+  const {
+    state: posts,
+    isLoading: loading,
+    executeImmediately: loadPosts,
+  } = useAsyncState<PostItem[]>(
+    async () => {
+      const response = await loader();
+      return response.data as PostItem[];
+    },
+    [],
+    {
+      onError(error) {
+        console.error('Failed to load posts:', error);
+      },
+    },
+  );
 
   const selectedPost = shallowRef<PostItem | null>(null);
 
@@ -54,21 +68,6 @@ export const {
     return Array.from(tagsSet);
   });
 
-  const loadPosts = async () => {
-    loading.value = true;
-
-    try {
-      const data = await loader();
-      posts.value = data!.data as PostItem[];
-    }
-    catch (error) {
-      console.error('Failed to load posts:', error);
-    }
-    finally {
-      loading.value = false;
-    }
-  };
-
   function toggleTag(tag: string) {
     if (filters.tags.has(tag))
       filters.tags.delete(tag);
@@ -84,9 +83,6 @@ export const {
     filters.search = '';
     filters.tags.clear();
   }
-
-  // Initial load
-  loadPosts();
 
   return {
     posts,

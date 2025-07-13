@@ -1,6 +1,7 @@
 <script setup lang="ts">
+import type { ButtonProps } from './types';
 import { computed } from 'vue';
-import { type ButtonProps, buttonSizes, buttonVariants } from './types';
+import { buttonSizes, buttonVariants } from './types';
 
 const props = withDefaults(defineProps<ButtonProps>(), {
   variant: 'primary',

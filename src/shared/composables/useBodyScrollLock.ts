@@ -1,4 +1,5 @@
-import { type MaybeRefOrGetter, onScopeDispose, toValue, watchEffect } from 'vue';
+import type { MaybeRefOrGetter } from 'vue';
+import { onScopeDispose, toValue, watchEffect } from 'vue';
 
 export function useBodyScrollLock(isLocked: MaybeRefOrGetter<boolean>) {
   let originalOverflow: string | null = null;

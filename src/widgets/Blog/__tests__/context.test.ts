@@ -41,6 +41,8 @@ describe('blog Context', () => {
     const context = useProvidingPosts(mockLoader);
 
     expect(context.loading.value).toBe(true);
+
+    await nextTick();
     await nextTick();
 
     expect(mockLoader).toHaveBeenCalled();
@@ -115,6 +117,8 @@ describe('blog Context', () => {
 
   it('should return available tags from all posts', async () => {
     const context = useProvidingPosts(mockLoader);
+
+    await nextTick();
     await nextTick();
 
     const expectedTags = ['vue', 'javascript', 'frontend', 'typescript', 'react', 'comparison'];
@@ -157,6 +161,7 @@ describe('blog Context', () => {
     const errorLoader = vi.fn().mockRejectedValue(new Error('Failed to load'));
 
     const context = useProvidingPosts(errorLoader);
+    await nextTick();
     await nextTick();
 
     expect(consoleErrorSpy).toHaveBeenCalledWith('Failed to load posts:', expect.any(Error));
