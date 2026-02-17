@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@robonen/stdlib':
-        specifier: ^0.0.7
-        version: 0.0.7
+        specifier: ^0.0.9
+        version: 0.0.9
       '@robonen/vue':
-        specifier: ^0.0.11
-        version: 0.0.11(typescript@5.8.3)
+        specifier: ^0.0.13
+        version: 0.0.13(typescript@5.8.3)
       '@tailwindcss/vite':
         specifier: ^4.1.18
         version: 4.1.18(vite@7.3.1(@types/node@24.10.13)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2))
@@ -29,7 +29,7 @@ importers:
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^7.4.3
-        version: 7.4.3(@vue/compiler-sfc@3.5.28)(eslint-plugin-vuejs-accessibility@2.4.2(eslint@9.39.2(jiti@2.6.1))(globals@17.3.0))(eslint@9.39.2(jiti@2.6.1))(typescript@5.8.3)(vitest@4.0.18(@types/node@24.10.13)(jiti@2.6.1)(jsdom@27.4.0)(lightningcss@1.30.2)(yaml@2.8.2))
+        version: 7.4.3(@vue/compiler-sfc@3.5.28)(eslint-plugin-vuejs-accessibility@2.5.0(eslint@9.39.2(jiti@2.6.1))(globals@17.3.0))(eslint@9.39.2(jiti@2.6.1))(typescript@5.8.3)(vitest@4.0.18(@types/node@24.10.13)(jiti@2.6.1)(jsdom@27.4.0)(lightningcss@1.30.2)(yaml@2.8.2))
       '@robonen/tsconfig':
         specifier: ^0.0.2
         version: 0.0.2
@@ -49,8 +49,8 @@ importers:
         specifier: ^9.39.2
         version: 9.39.2(jiti@2.6.1)
       eslint-plugin-vuejs-accessibility:
-        specifier: ^2.4.2
-        version: 2.4.2(eslint@9.39.2(jiti@2.6.1))(globals@17.3.0)
+        specifier: ^2.5.0
+        version: 2.5.0(eslint@9.39.2(jiti@2.6.1))(globals@17.3.0)
       jsdom:
         specifier: ^27.4.0
         version: 27.4.0
@@ -525,17 +525,21 @@ packages:
     resolution: {integrity: sha512-YLT9Zo3oNPJoBjBc4q8G2mjU4tqIbf5CEOORbUUr48dCD9q3umJ3IPlVqOqDakPfd2HuwccBaqlGhN4Gmr5OWg==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@robonen/stdlib@0.0.7':
-    resolution: {integrity: sha512-qoRFWceq0XO6n9LTSfu8oH+3zsdX76rJB+k2BoN+8/M/TT8zVE8NuHsJ6Xe5NrOZ42P1lbf7U56fNFgOMepq/A==}
-    engines: {node: '>=22.15.0'}
+  '@robonen/platform@0.0.4':
+    resolution: {integrity: sha512-T74LyX+sgm9TK8wNoTHiJFFTmpxzEAnT8XXgoeNsk+LPEJTWaBh/G4s8RkxheSq57hyi8X3/5njr6dAZDGdMng==}
+    engines: {node: '>=24.13.1'}
+
+  '@robonen/stdlib@0.0.9':
+    resolution: {integrity: sha512-JrnOEILRde0bX50C1lY1ZY90QQ18pe6Z47Lw45vYFi2fAcoDSgeKztl028heaFyDXLjsFdc2VGhkt5I+DFCFuQ==}
+    engines: {node: '>=24.13.1'}
 
   '@robonen/tsconfig@0.0.2':
     resolution: {integrity: sha512-0Mt2EVY/eZ9iZDkrrvy+Ui3nP9Xb4TSO+9sCvlumU/GkVY6hZU7M+v9l5m8puBdtbj1MglgY0x9OSzUeyYx90Q==}
     engines: {node: '>=22.16.0'}
 
-  '@robonen/vue@0.0.11':
-    resolution: {integrity: sha512-X4xvmlZkL+BGBUPkoAoLtg88wSGX6TgN545DGnYtX7LlIVSY5g+0ux6/N0L2l/wDfn8CfhXz6rHjVNZqhvsSkQ==}
-    engines: {node: '>=22.18.0'}
+  '@robonen/vue@0.0.13':
+    resolution: {integrity: sha512-dBAkDoVLnzjw7I4FFUxyUyez1yCvsQShB9Hz32glY8FZm7UqIz3wCOzr+b5gKO9XmUFjhami58HvSnbOoc/oEQ==}
+    engines: {node: '>=24.13.1'}
 
   '@rolldown/pluginutils@1.0.0-rc.2':
     resolution: {integrity: sha512-izyXV/v+cHiRfozX62W9htOAvwMo4/bXKDrQ+vom1L1qRuexPock/7VZDAhnpHCLNejd3NJ6hiab+tO0D44Rgw==}
@@ -1366,8 +1370,8 @@ packages:
       '@typescript-eslint/parser':
         optional: true
 
-  eslint-plugin-vuejs-accessibility@2.4.2:
-    resolution: {integrity: sha512-5IvE0QnRj7nFZBm00V+nB+VtXIW5E4CkNg0m6vFyCapTFcTeMxU87zX39Yy2UZZ+GClJYfppEzoX07WrSFoPqQ==}
+  eslint-plugin-vuejs-accessibility@2.5.0:
+    resolution: {integrity: sha512-oZ2fL4tS91Cm/ezH3BueNP+FtpbbeS627OSqqgp9/lsN//glmoPcLBT6D53xwGocLtyBybaT99tX4ThBh8+ytA==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       eslint: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0
@@ -1384,10 +1388,6 @@ packages:
     peerDependencies:
       '@vue/compiler-sfc': ^3.3.0
       eslint: '>=9.0.0'
-
-  eslint-scope@7.2.2:
-    resolution: {integrity: sha512-dOt21O7lTMhDM+X9mB4GX+DZrZtCUJPL/wlcTqxyrx5IvO0IYtILdtrQGQp+8n5S0gwSVmOf9NQrjMOgfQZlIg==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
   eslint-scope@8.4.0:
     resolution: {integrity: sha512-sNXOfKCn74rt8RICKMvJS7XKV/Xk9kA7DyJr8mJik3S7Cwgy3qlkkmyS2uQB3jiJg6VNdZd/pDBJu0nvG2NlTg==}
@@ -1763,9 +1763,6 @@ packages:
 
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
-
-  lodash@4.17.21:
-    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
 
   longest-streak@3.1.0:
     resolution: {integrity: sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g==}
@@ -2362,12 +2359,6 @@ packages:
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
 
-  vue-eslint-parser@9.4.3:
-    resolution: {integrity: sha512-2rYRLWlIpaiN8xbPiDyXZXRgLGOtWxERV7ND5fFAv5qo1D2N9Fu9MNajBNc6o13lZ+24DAWCkQCvj4klgmcITg==}
-    engines: {node: ^14.17.0 || >=16.0.0}
-    peerDependencies:
-      eslint: '>=6.0.0'
-
   vue-router@4.6.4:
     resolution: {integrity: sha512-Hz9q5sa33Yhduglwz6g9skT8OBPii+4bFn88w6J+J4MfEo4KRRpmiNG/hHHkdbRFlLBOqxN8y8gf2Fb0MTUgVg==}
     peerDependencies:
@@ -2468,7 +2459,7 @@ snapshots:
 
   '@acemir/cssom@0.9.29': {}
 
-  '@antfu/eslint-config@7.4.3(@vue/compiler-sfc@3.5.28)(eslint-plugin-vuejs-accessibility@2.4.2(eslint@9.39.2(jiti@2.6.1))(globals@17.3.0))(eslint@9.39.2(jiti@2.6.1))(typescript@5.8.3)(vitest@4.0.18(@types/node@24.10.13)(jiti@2.6.1)(jsdom@27.4.0)(lightningcss@1.30.2)(yaml@2.8.2))':
+  '@antfu/eslint-config@7.4.3(@vue/compiler-sfc@3.5.28)(eslint-plugin-vuejs-accessibility@2.5.0(eslint@9.39.2(jiti@2.6.1))(globals@17.3.0))(eslint@9.39.2(jiti@2.6.1))(typescript@5.8.3)(vitest@4.0.18(@types/node@24.10.13)(jiti@2.6.1)(jsdom@27.4.0)(lightningcss@1.30.2)(yaml@2.8.2))':
     dependencies:
       '@antfu/install-pkg': 1.1.0
       '@clack/prompts': 1.0.1
@@ -2508,7 +2499,7 @@ snapshots:
       vue-eslint-parser: 10.2.0(eslint@9.39.2(jiti@2.6.1))
       yaml-eslint-parser: 2.0.0
     optionalDependencies:
-      eslint-plugin-vuejs-accessibility: 2.4.2(eslint@9.39.2(jiti@2.6.1))(globals@17.3.0)
+      eslint-plugin-vuejs-accessibility: 2.5.0(eslint@9.39.2(jiti@2.6.1))(globals@17.3.0)
     transitivePeerDependencies:
       - '@eslint/json'
       - '@vue/compiler-sfc'
@@ -2837,12 +2828,16 @@ snapshots:
 
   '@pkgr/core@0.2.7': {}
 
-  '@robonen/stdlib@0.0.7': {}
+  '@robonen/platform@0.0.4': {}
+
+  '@robonen/stdlib@0.0.9': {}
 
   '@robonen/tsconfig@0.0.2': {}
 
-  '@robonen/vue@0.0.11(typescript@5.8.3)':
+  '@robonen/vue@0.0.13(typescript@5.8.3)':
     dependencies:
+      '@robonen/platform': 0.0.4
+      '@robonen/stdlib': 0.0.9
       vue: 3.5.28(typescript@5.8.3)
     transitivePeerDependencies:
       - typescript
@@ -3690,12 +3685,12 @@ snapshots:
       '@stylistic/eslint-plugin': 5.8.0(eslint@9.39.2(jiti@2.6.1))
       '@typescript-eslint/parser': 8.55.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.8.3)
 
-  eslint-plugin-vuejs-accessibility@2.4.2(eslint@9.39.2(jiti@2.6.1))(globals@17.3.0):
+  eslint-plugin-vuejs-accessibility@2.5.0(eslint@9.39.2(jiti@2.6.1))(globals@17.3.0):
     dependencies:
       aria-query: 5.3.2
       eslint: 9.39.2(jiti@2.6.1)
       globals: 17.3.0
-      vue-eslint-parser: 9.4.3(eslint@9.39.2(jiti@2.6.1))
+      vue-eslint-parser: 10.2.0(eslint@9.39.2(jiti@2.6.1))
     transitivePeerDependencies:
       - supports-color
 
@@ -3716,11 +3711,6 @@ snapshots:
     dependencies:
       '@vue/compiler-sfc': 3.5.28
       eslint: 9.39.2(jiti@2.6.1)
-
-  eslint-scope@7.2.2:
-    dependencies:
-      esrecurse: 4.3.0
-      estraverse: 5.3.0
 
   eslint-scope@8.4.0:
     dependencies:
@@ -4086,8 +4076,6 @@ snapshots:
       p-locate: 5.0.0
 
   lodash.merge@4.6.2: {}
-
-  lodash@4.17.21: {}
 
   longest-streak@3.1.0: {}
 
@@ -4829,19 +4817,6 @@ snapshots:
       eslint-visitor-keys: 4.2.1
       espree: 10.4.0
       esquery: 1.7.0
-      semver: 7.7.3
-    transitivePeerDependencies:
-      - supports-color
-
-  vue-eslint-parser@9.4.3(eslint@9.39.2(jiti@2.6.1)):
-    dependencies:
-      debug: 4.4.3
-      eslint: 9.39.2(jiti@2.6.1)
-      eslint-scope: 7.2.2
-      eslint-visitor-keys: 3.4.3
-      espree: 9.6.1
-      esquery: 1.7.0
-      lodash: 4.17.21
       semver: 7.7.3
     transitivePeerDependencies:
       - supports-color
