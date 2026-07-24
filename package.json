@@ -24,7 +24,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^7.4.3",
     "@robonen/tsconfig": "^0.0.2",
-    "@types/jsdom": "^27.0.0",
+    "@types/jsdom": "^28.0.3",
     "@types/node": "^24.10.13",
     "@vitejs/plugin-vue": "^6.0.4",
     "@vue/test-utils": "^2.4.6",
